@@ -1,0 +1,156 @@
+// Variables
+@import 'variables';
+
+.article {
+    line-height: 1.5;
+    color: $light-gray;
+
+    h6 {
+        margin-bottom: 0 !important;
+    }
+
+    .description {
+        font-size: 17px;
+        color: $article-description;
+
+        a {
+            color: $default-gray;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+
+        p {
+            margin: 1rem auto;
+        }
+
+        ul {
+            margin: 1.5rem auto auto auto;
+        }
+
+    }
+
+    .color-blue {
+        color: $blue !important;
+    }
+
+    .color-purple {
+        color: $purple !important;
+    }
+
+    .color-green {
+        color: $green !important;
+    }
+
+    .color-red {
+        color: $red !important;
+    }
+
+    .color-orange {
+        color: $orange !important;
+    }
+
+    .color-brown {
+        color: $brown !important;
+    }
+
+    .color-n-orange {
+        color: $n-orange !important;
+    }
+
+    .name {
+        font-weight: 700;
+        font-size: 20px;
+        font-family: $font-family-myriad-pro, serif;
+    }
+
+    .color-blue {
+        color: $blue !important;
+    }
+
+    .color-purple {
+        color: $purple !important;
+    }
+
+    .color-green {
+        color: $green !important;
+    }
+
+    .color-red {
+        color: $red !important;
+    }
+
+    .color-orange {
+        color: $orange !important;
+    }
+
+    .color-brown {
+        color: $brown !important;
+    }
+
+    .color-n-orange {
+        color: $n-orange !important;
+    }
+
+    .name {
+        font-weight: 700;
+        font-size: 20px;
+        font-family: $font-family-myriad-pro, serif;
+    }
+
+    .image-div {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-phone) {
+        .name {
+            font-size: 20px;
+        }
+
+        .image {
+            text-align: left !important;
+        }
+
+        .image-div {
+            img {
+                height: 200px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-xm) {
+        .name {
+            font-size: 16px !important;
+        }
+
+        .image {
+            text-align: center !important;
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+        .image-div {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.water-quality {
+    .name {
+        text-decoration: none;
+        font-size: 24px !important;
+        font-weight: normal;
+        color: #585551;
+    }
+}
+
+.drinking-system {
+    li {
+        margin: 1rem 0;
+    }
+}

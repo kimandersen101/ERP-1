@@ -1,0 +1,34 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Bootstrap-vue
+@import '~bootstrap-vue';
+
+// Material icons
+$material-icons-font-path: $APP_URL + '/fonts/vendor/material-icons/icon';
+@import '~material-icons/iconfont/material-icons.scss';
+
+// Font Awesome
+$fa-font-path: $APP_URL + '/fonts/vendor/font-awesome';
+@import '~font-awesome/scss/font-awesome.scss';
+
+// Vue Select2
+@import "vue-select/src/scss/vue-select.scss";
+
+// Body
+@import 'body/body';
+
+// Nav
+@import 'layout/nav';
+
+// Footer
+@import 'layout/footer';
+
+// common
+@import 'layout/common';

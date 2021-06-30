@@ -1,0 +1,55 @@
+// Variables
+@import 'variables';
+
+/*******thank-you*********/
+.thank-you {
+    p {
+        font-size: 25px;
+        line-height: 1.5rem;
+
+        a, a:hover {
+            color: $blue !important;
+            text-decoration: none;
+        }
+    }
+
+    .android-btn {
+        width: 175px !important;
+    }
+
+    .ios-btn {
+        width: 150px !important;
+    }
+
+    @media only screen and (max-width: 454px) {
+        .android-btn {
+            width: 150px !important;
+        }
+        .ios-btn {
+            width: 125px !important;
+        }
+    }
+    @media only screen and (max-width: 404px) {
+        .android-btn {
+            width: 110px !important;
+        }
+        .ios-btn {
+            width: 90px !important;
+        }
+    }
+    @media only screen and (max-width: $breakpoint-phone) {
+        p {
+            font-size: 22px;
+        }
+    }
+    @media only screen and (max-width: 425px) {
+        p {
+            font-size: 17px;
+        }
+    }
+    @media only screen and (min-width: 425px) and (max-width: $breakpoint-small) {
+        p {
+            font-size: 20px;
+        }
+    }
+}

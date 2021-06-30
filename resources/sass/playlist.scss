@@ -1,0 +1,193 @@
+// Variables
+@import 'variables';
+
+//Slick carasoul
+@import '~slick-carousel/slick/slick.scss';
+
+/****** Playlist *********/
+.playlist {
+
+    .card {
+        border: 1px #707070 solid;
+    }
+
+    .different {
+        p {
+            font-family: $font-family-myriad-pro !important;
+        }
+    }
+
+    .playlist-header {
+        background-color: inherit;
+        border-bottom: 1px #707070 solid;
+    }
+
+    .playlist-header {
+        span {
+            color: #48B8E8;
+        }
+    }
+
+    .playlist-body {
+        height: 230px;
+        overflow: hidden;
+
+        a {
+            text-decoration: none;
+
+            &focus {
+                color: #007AD2;
+                outline: none;
+            }
+
+            .card-text:not(focus) {
+                color: #393939;
+            }
+        }
+
+        .card-title {
+            font-weight: 700;
+            font-size: 14px;
+
+            &.active {
+                color: #48B8E8;
+            }
+        }
+    }
+
+    .playlist-list {
+        border-bottom: 1px #707070 solid !important;
+        color: #393939;
+
+        img {
+            width: 117px;
+            height: auto;
+        }
+    }
+
+    .playlist-footer {
+        .scroll-btn {
+            background-color: #F57800;
+
+            i {
+                font-size: 31px;
+                color: #000;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .slick-arrow.slick-disabled {
+        opacity: 0.3;
+    }
+
+    @media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+        .video-container {
+            padding: 0 15px !important;
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-xm) and (max-width: 469px) {
+        .playlist-list {
+            padding: 1rem 1rem;
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-xm) and (max-width: 400px) {
+        .playlist-list {
+            padding: 2.1rem 1rem;
+        }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: $breakpoint-phone) {
+        .playlist-list {
+            padding: 2.78rem 0.6rem !important;
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-tablet) {
+        article {
+            margin-bottom: 6px;
+        }
+        .card {
+            display: inline-block;
+        }
+
+        .playlist-body {
+            overflow-x: hidden;
+            width: calc(100% - 84px);
+            float: left;
+            height: 214px;
+        }
+
+        .playlist-list {
+            border-bottom: none !important;
+            text-align: center;
+
+            img {
+                width: 100%;
+                margin: auto;
+                float: none !important;
+            }
+        }
+
+        .playlist-footer {
+            display: none;
+        }
+
+        .scroll-btn {
+            background-color: #F57800;
+            width: 42px;
+            float: left;
+            line-height: 206px;
+            margin: 0px;
+
+            i {
+                font-size: 31px;
+                color: #000;
+                font-weight: 700;
+            }
+        }
+
+        .card-title, .card-text {
+            margin-left: 0px !important;
+            display: inline-block;
+            color: #393939;
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+        .scroll-mob {
+            padding: 0px !important;
+
+            .fa-angle-left, .fa-angle-right {
+                display: none;
+            }
+        }
+        .playlist-list {
+            img {
+                margin-right: 12px;
+            }
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-desktop) {
+        .playlist-body {
+            margin-top: -1px !important;
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+        .playlist-body {
+            .card-title {
+                font-size: 12px !important;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        .playlist-body {
+            height: 187px !important;
+        }
+    }
+}

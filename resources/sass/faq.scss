@@ -1,0 +1,38 @@
+// Variables
+@import 'variables';
+
+.faq {
+    color: $light-gray;
+
+    .icon {
+        width: 20px;
+        height: 28px;
+        float: left;
+    }
+
+    .faq-links {
+        a {
+            color: $light-gray;
+            text-decoration: none;
+            font-weight: 300;
+        }
+    }
+
+    .name {
+        font-weight: 700;
+        font-size: 20px;
+        font-family: $font-family-myriad-pro, serif;
+    }
+
+    @media only screen and (min-width: $breakpoint-phone) {
+        .name {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-xm) {
+        .name {
+            font-size: 16px !important;
+        }
+    }
+}

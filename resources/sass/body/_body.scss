@@ -1,0 +1,59 @@
+body {
+    font-family: $font-family-myriad-pro !important;
+    font-size: $font-size-base;
+    background-color: $default-background;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p {
+    font-size: 17px;
+    color: $article-description;
+}
+
+.background-aqua{
+    background-image: url($APP_URL + '/images/shop-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 125px;
+    min-height: 1000px;
+    width: 100%;
+    margin: auto;
+
+    @media only screen and (min-width: 1300px) {
+        width: 1300px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .shop-card {
+        min-width: 480px;
+        max-width: 480px;
+    }
+}
+
+.wrapper {
+    margin-top: 80px;
+    &.has-breadcrumb {
+        margin-top: 135px;
+    }
+}
+
+/******** Fonts ********/
+.font-myriad-regular {
+    font-family: MyriadProRegular;
+}
+
+.font-myriad-light {
+    font-family: MyriadProLight;
+}
+
+.font-myriad-cond {
+    font-family: MyriadProCond;
+}
+
+/******** Fonts ********/

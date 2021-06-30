@@ -1,0 +1,399 @@
+// Variables
+@import 'variables';
+
+@font-face {
+    font-family: Agency FB;
+    src: url($APP_URL + '/agency-fb.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+body {
+    font-family: MyriadProRegular !important;
+    background-image: url($APP_URL + '/images/optin-background.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    body {
+        background-size: contain;
+        background-position: center 5vw;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    body {
+        background-position: center -1vw;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    body {
+        background-position: center -8vw;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    body {
+        background-position: center -14vw;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    body {
+        background-position: center -18vw;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    body {
+        background-position: center -22vw;
+    }
+}
+
+.sa-landing {
+    p {
+        font-size: 19px;
+        line-height: 1.6em;
+        margin-bottom: 1em;
+    }
+
+    .font-myriad {
+        font-family: MyriadProRegular !important;
+    }
+
+
+    .font-agency {
+        font-family: Agency FB !important;
+    }
+
+    .title {
+        font-weight: bolder;
+        padding: 10px 0px;
+        font-size: 25px;
+    }
+
+    .with-errors {
+        position: absolute;
+    }
+
+    .min-h-100 {
+        min-height: 100%;
+    }
+
+    .d-grid {
+        display: grid;
+    }
+
+    .details {
+        font-size: 23px;
+        font-weight: bold;
+        line-height: 28px;
+    }
+
+    .headings {
+        font-size: 50px !important;
+    }
+
+    .faucet-img {
+        max-height: 715px;
+        margin: auto;
+        position: absolute;
+        bottom: 7px;
+    }
+
+    .discover {
+        color: $blue;
+        font-size: 25px;
+    }
+
+    .thumbnail {
+        max-width: 100px;
+    }
+
+    .open-quote {
+        position: absolute;
+        left: 210px;
+        max-width: 45px;
+    }
+
+    .close-quote {
+        position: absolute;
+        right: 320px;
+        top: 100px;
+        max-width: 45px;
+    }
+
+    .main-heading {
+        font-size: 50px;
+        color: $black;
+        font-family: 'Agency FB' !important;
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: 570px) {
+        .main-heading {
+            font-size: 6.9vw;
+        }
+        .title {
+            font-size: 4.5vw;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 0.75rem
+    }
+
+    .form_heading {
+        font-size: 20px;
+    }
+
+    .form-control {
+        font-size: 18px;
+    }
+
+    .error {
+        border-color: red
+    }
+
+    .color-black {
+        color: black !important;
+    }
+
+    .color-blue {
+        color: #3D9BE9 !important;
+    }
+
+    .color-orange {
+        color: #F26113 !important;
+    }
+
+    .color-brown {
+        color: brown !important;
+    }
+
+    .color-n-orange {
+        color: orange !important;
+    }
+
+    .color-white {
+        color: white;
+    }
+
+    .bg-white {
+        background-color: white;
+    }
+
+    .bg-orange {
+        background-color: #FFAA43 !important;
+    }
+
+    .bg-blue {
+        background-color: $blue;
+    }
+
+    .bg-gray {
+        background-color: #EBEBEB !important;
+    }
+
+    .mh-100 {
+        min-height: 100%;
+    }
+
+    .quote-text {
+        font-size: 35px;
+    }
+
+    .bg-light-gray {
+        background-color: #E6E6E6;
+    }
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .learn-more {
+        font-size: 25px;
+    }
+
+    .border-y {
+        border-top: 1px solid $default-gray;
+        border-bottom: 1px solid $default-gray;
+    }
+
+    .right-arrow {
+        position: relative;
+        top: 5px;
+        left: -6px;
+        font-size: 22px;
+    }
+
+    #mobileView {
+        .details {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .description {
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.8em;
+        }
+
+        @media (min-width: 375px) {
+            .details {
+                font-size: 13px;
+            }
+            .description {
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width: $breakpoint-sm) {
+            .details {
+                font-size: 16px;
+                line-height: 18px;
+            }
+            .description {
+                font-size: 17px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .footer-img {
+        max-height: 120px;
+    }
+
+    .with-errors {
+        font-size: 11px;
+    }
+
+    .our-story, .technology {
+        p {
+            color: #585858;
+        }
+    }
+
+    @media (max-width: 590px) {
+        .quote-text {
+            font-size: 7.2vw !important;
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-phone) {
+        .form-control {
+            font-size: 16px;
+            height: calc(1.5em + .75rem + 8px);
+        }
+        .thumbnail {
+            max-width: 50px;
+        }
+
+        .form_heading {
+            font-size: 22px;
+        }
+
+        .headings {
+            font-size: 40px !important;
+        }
+
+        .discover {
+            font-size: 20px;
+        }
+
+        .open-quote {
+            left: 20px;
+            max-width: 25px;
+        }
+
+        .quote-text {
+            font-size: 40px;
+        }
+
+        .quote-text span {
+            display: inline-block;
+        }
+
+        .close-quote {
+            right: 60px;
+            top: 120px;
+            max-width: 25px;
+        }
+
+        .footer-img {
+            max-height: 50px;
+        }
+
+        .see-all {
+            font-size: 25px;
+        }
+
+        .right-arrow {
+            top: 6px;
+        }
+
+    }
+
+    @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-phone) {
+        .open-quote {
+            left: 10px;
+            max-width: 25px;
+        }
+        .close-quote {
+            right: 70px;
+            top: 80px;
+            max-width: 25px;
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-small) {
+        .quote-text {
+            padding: 0 15px;
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+        .headings {
+            font-size: 30px !important;
+        }
+
+        .discover {
+            font-size: 20px;
+        }
+
+        .quote-text {
+            padding: 0 15px;
+        }
+
+        .open-quote {
+            left: 50px;
+        }
+
+        .close-quote {
+            right: 110px;
+            top: 180px;
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+        .headings {
+            font-size: 30px !important;
+        }
+
+        .open-quote {
+            left: 120px;
+        }
+
+        .close-quote {
+            right: 230px;
+            top: 100px;
+        }
+    }
+}
+

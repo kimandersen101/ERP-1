@@ -1,0 +1,264 @@
+// Variables
+@import 'variables';
+
+.shop-footer {
+    .machine-img {
+        max-width: 220px;
+    }
+
+    .title {
+        font-family: $font-family-myriad-pro !important;
+        font-size: 30px;
+        font-weight: 600;
+        color: $scorpion-color;
+    }
+}
+
+.loading {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 80.61px - 75.67px);
+    background-image: url($APP_URL + '/images/shop-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+
+    .spinner-border {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.shop {
+    p {
+        font-family: $font-family-myriad-pro !important;
+    }
+
+    .product-img {
+        max-width: 220px;
+        max-height: 200px;
+    }
+
+    .custom-card {
+        .card-title {
+            display: block;
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 1.2rem;
+        }
+    }
+
+    .sub-total, .amount {
+        font-family: 'MyriadProCond';
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .accordian-title {
+        padding: 6px 0px;
+    }
+
+    .input-border {
+        border: 1px solid $default-border-color;
+    }
+
+    /*********installation**********/
+    .installation-options {
+        color: #505050;
+        border: 1px dashed $default-gray;
+        border-radius: 5px;
+        padding: 25px 16px;
+
+        .title {
+            font-size: 16px;
+            display: inline;
+            vertical-align: middle;
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    .nav-tabs {
+        border-bottom: none;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        border-width: 0px !important;
+        border-right-color: transparent !important;
+        border-left-color: transparent !important;
+        border-bottom-color: transparent !important;
+
+        li {
+            padding: 0px 6px;
+
+            &:first-child {
+                padding-left: 0px;
+            }
+
+            &:last-child {
+                padding-right: 0px;
+            }
+        }
+
+        .nav-link {
+            font-weight: bold;
+            font-size: 16px;
+            color: $description-color;
+            border-top: 4px solid $tab-border-color;
+            border-left-width: 0px;
+            border-right-width: 0px;
+            border-top-left-radius: 0 !important;
+            border-top-right-radius: 0 !important;
+            padding: 0.5rem 0;
+
+            &:hover {
+                color: $description-color;
+                border-top-left-radius: 0 !important;
+                border-top-right-radius: 0 !important;
+                border-right-color: transparent !important;
+                border-left-color: transparent !important;
+                border-bottom-color: transparent !important;
+            }
+
+            &.active {
+                color: $description-color;
+                border-top-left-radius: 0 !important;
+                border-top-right-radius: 0 !important;
+                border-right-color: transparent !important;
+                border-left-color: transparent !important;
+                border-bottom-color: transparent !important;
+                border-top: 4px solid $blue;
+
+                &:hover {
+                    color: $description-color;
+                    border-top-left-radius: 0 !important;
+                    border-top-right-radius: 0 !important;
+                    border-right-color: transparent !important;
+                    border-left-color: transparent !important;
+                    border-bottom-color: transparent !important;
+                }
+            }
+            &:focus{
+                outline: 0px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        .nav-tabs {
+            .nav-link {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.product-detail {
+    .title {
+        font-weight: bold;
+        font-size: 24px;
+        color: $scorpion-color;
+    }
+
+    .custom-checkbox {
+        &.form-group {
+            label {
+                margin-top: 10px;
+            }
+
+            &.cross {
+                label {
+                    &:before {
+                        border-radius: 0 !important;
+                        width: 35px !important;
+                        height: 35px !important;
+                        top: -4px;
+                    }
+                }
+
+                input:checked + label:after {
+                    font-family: $font-family-myriad-pro !important;
+                    top: -6px !important;
+                    left: 7px !important;
+                    font-size: 26px !important;
+                }
+            }
+        }
+    }
+
+    .description {
+        font-weight: bold;
+        color: $description-color;
+    }
+
+    .btn {
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:not(:disabled):not(.disabled):active:focus {
+            box-shadow: none;
+        }
+
+        &.btn-secondary {
+            color: $description-color;
+
+            &:focus {
+                color: $description-color;
+            }
+
+            &:active {
+                color: $description-color;
+            }
+
+            &:hover {
+                color: $description-color;
+            }
+        }
+
+        &.btn-outline-primary {
+            border-width: 3px;
+            font-size: 24px;
+            font-weight: 550;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:not(:disabled):not(.disabled):active:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .b-custom-control-lg {
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+
+        .custom-control-label {
+            &:before {
+                top: -0.01rem;
+                left: -1.875rem;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            &:after {
+                top: -0.01rem;
+                left: -1.875rem;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
+}

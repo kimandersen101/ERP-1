@@ -1,0 +1,22 @@
+// Variables
+@import "variables";
+
+.pictures {
+    .tile-image {
+        img {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    .section {
+        margin-top: 14px;
+    }
+
+    .title {
+        h3 {
+            font-size: 47px;
+            font-weight: 300;
+        }
+    }
+}

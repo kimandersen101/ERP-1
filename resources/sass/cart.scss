@@ -1,0 +1,98 @@
+// Variables
+@import 'variables';
+
+.cart {
+    a.show-tax-details {
+        font-size: 13px;
+        position: relative;
+        top: -5px;
+    }
+
+    #show-tax-details {
+        .card-body {
+            padding: 1rem;
+        }
+    }
+
+    .product {
+        .product-detail {
+            line-height: 31px;
+
+            .product-name {
+                font-family: 'MyriadProCond';
+                font-size: 25px;
+                font-weight: 700;
+                color: #ADADAD;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+
+        .sub-total, .amount {
+            font-family: 'MyriadProCond';
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .product-img {
+            img {
+                max-height: 130px;
+            }
+
+            .img-height {
+                max-height: 115px !important;
+            }
+        }
+
+        .zone_1 img {
+            width: 46px !important;
+            height: 168px;
+        }
+
+        .zone_2 img {
+            width: 46px !important;
+            height: 168px;
+        }
+
+        .zone_3, .zone_4 img {
+            max-width: 140px;
+        }
+
+        .zone_5 img {
+            max-width: 163px;
+        }
+
+        .price, .old-price {
+            font-family: 'MyriadProCond';
+            font-size: 25px;
+            font-weight: bold;
+            color: #6C6C6C;
+            display: block;
+        }
+
+        .remove-from-cart {
+            cursor: pointer;
+        }
+
+        .old-price strike {
+            text-decoration-color: red;
+        }
+    }
+
+    .remove-cart {
+        font-size: 20px;
+        color: #707070;
+    }
+
+    .page-title {
+        font-weight: bolder;
+    }
+
+    .border-black {
+        border: 1px solid black;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
